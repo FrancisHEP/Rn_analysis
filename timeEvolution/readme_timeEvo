@@ -1,0 +1,16 @@
+1. GenqS1Tree.C
+Generate qS1Tree in directory qS1_tree/
+qS1Tree->Draw("tS2-tS1:xS2^2+yS2^2","","colz")
+qS1Tree->Draw("tS2-tS1:qS1c>>(100,0,100e3,100,40e3,260e3)","","colz")
+
+2. CalAPeaksRate.C
+
+3. GenAPeaksTree.C
+input log file:
+format of log file:
+[runNo] [startTime] [duration/h]
+24467   Nov3         1h20m
+24468   Nov4         22h
+...     ...          ...
+
+4. PlotAPeaksEvo.C

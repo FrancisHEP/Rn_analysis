@@ -15,7 +15,7 @@ void Plot_ba212(int runNo)
   // chain->Add("outTree_212_BiPo_run10.root");
 
   int Time = 6569642;
-  int runNo, trigNo;
+  int trigNo;
   double triggerTime;
 
   unsigned int nS1, nS2;

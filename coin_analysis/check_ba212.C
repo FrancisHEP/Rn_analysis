@@ -1,9 +1,12 @@
+// This is the better version of Plot_ba212.C
+// But I just use it to check 24467&24468. 
+// 2019-02-12 Wenbo
+
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <algorithm>
 
-// e.g. ba212/outTree_212_BiPo_24430.root
 void check_ba212()
 {
   gStyle->SetPalette(57); // kBird=57

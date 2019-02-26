@@ -1,6 +1,10 @@
+// Wenbo
+// 2019-02-12
 // This is the better version of Plot_ba212.C
 // But I just use it to check 24467&24468. 
-// 2019-02-12 Wenbo
+// 2019-01-29
+// update TBA[beta]:TBA[alpha] check.
+
 
 #include <iostream>
 #include <fstream>

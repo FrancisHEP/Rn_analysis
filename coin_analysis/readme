@@ -1,1 +1,14 @@
+Wenbo 
 
+***
+2019-02-26
+
+combine_roots.C	could combine two root files together
+check_ba212.C	is a better version of CalRate_ba212.C
+likelihoodnDim.C   is the FC method of interval estimation offered by Dan Zhang.
+
+I could not remember the content of every codes. Especially these during 2018 annual meeting. 
+
+I moved .lst files to directory text_files/
+and once-only codes to directory talk_files/
+***

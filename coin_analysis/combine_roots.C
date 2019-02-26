@@ -1,3 +1,5 @@
+// combine BiPo212 root files 24467 and 24468
+// Wenbo Ma
 void combine_roots()
 {
   vector<int> runNo = {24467, 24468};

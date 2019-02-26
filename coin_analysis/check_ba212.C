@@ -5,7 +5,17 @@
 // 2019-01-29
 // update TBA[beta]:TBA[alpha] check.
 
-
+#include "TLatex.h"
+#include "TCanvas.h"
+#include "TCut.h"
+#include "TF1.h"
+#include "TH2.h"
+#include "TH1.h"
+#include "TChain.h"
+#include "TString.h"
+#include "TCanvas.h"
+#include "TStyle.h"
+#include "TROOT.h"
 #include <iostream>
 #include <fstream>
 #include <vector>

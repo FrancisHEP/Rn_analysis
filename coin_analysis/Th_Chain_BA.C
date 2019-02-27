@@ -5,9 +5,15 @@
 //      By Bi212-Po212 beta-alpha coincidence                                                   //
 //                                                                                              //
 //////////////////////////////////////////////////////////////////////////////////////////////////
-/******
-modified by Wenbo 2018-12-10
-******/
+/*
+2019-02-27 
+update:
+Stop if the target ba212_tree.root already exist.
+recreate -> create; TFile::IsZombie()
+2018-12-10
+modified
+*/
+
 #include <iostream>
 #include <TString.h>
 #include <TTree.h>
@@ -38,14 +44,14 @@ void Th_Chain_BA(int & runNo)
   // ifstream inf("./good.lst");
   // for(std::string line; std::getline(inf,line);) chain->Add(line.c_str());
 
-  int runNo, trigNo;
+  int trigNo;
   double triggerTime;
     
   unsigned int nS1, nS2;
   int s1max, s2max;
   double qS1T[10000], qS1B[10000], xS1T[10000], yS1T[10000];
   double xS1B[10000], yS1B[10000];
-  double qS1[10000], tS1[10000], pS1[10000], hS1[10000], ;
+  double qS1[10000], tS1[10000], pS1[10000], hS1[10000];
   double ttenS1[10000], wS1[10000], wtenS1[10000];
   double xS2NN[10000], yS2NN[10000];
   double qS1Veto[10000];
@@ -53,7 +59,7 @@ void Th_Chain_BA(int & runNo)
     
   double qS2T[10000], qS2B[10000], xS2T[10000], yS2T[10000];
   double xS2B[10000], yS2B[10000];
-  double qS2[10000], tS2[10000], pS2[10000], hS2[10000], ;
+  double qS2[10000], tS2[10000], pS2[10000], hS2[10000];
   double ttenS2[10000], wS2[10000], wtenS2[10000];
   double xS2NN[10000], yS2NN[10000], chi2[10000];
   double xS2PAF[10000], yS2PAF[10000];
@@ -156,7 +162,13 @@ void Th_Chain_BA(int & runNo)
   outTree->Branch("hS2", hS2, "hS2[nS2]/D");
   outTree->Branch("pS2", pS2, "pS2[nS2]/D");
 
+  TFile *outFile = new TFile(Form("ba212_trees/outTree_212_BiPo_%d.root",runNo),"create");
+  if (outFile->IsZombie()) {
+    std::cout << "Error opening file" << std::endl;
+    exit(-1);
+  }
   for(int i=0; i<totalEvt; i++){
+    if(i%1000==0) cout << i*1.00/totalEvt*100 <<"%"<< endl;
     chain->GetEntry(i);
     //    double ly(.0);
     //    ly = 4.4/1.1732;
@@ -171,7 +183,6 @@ void Th_Chain_BA(int & runNo)
     double highBeta = 3000*ly_Beta_3000;
     double t_low = 300; //ns
     double t_high = 3000;  //ns
-    if(i%1000000==0) cout << i*1.00/totalEvt*100 <<"%"<< endl;
     beta = alpha =0;
     if(nS2<1) continue;
     int Beta[100] = {0}, Alpha[100] = {0};
@@ -200,7 +211,7 @@ void Th_Chain_BA(int & runNo)
       }
     }
   }
-  TFile *outFile = new TFile(Form("ba212/outTree_212_BiPo_%d.root",runNo),"recreate");
+
   outTree->Write();
   outFile->Close();
 }

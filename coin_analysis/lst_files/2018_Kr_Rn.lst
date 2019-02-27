@@ -1,0 +1,195 @@
+25331	Nov 7 15:17	10h 57m	29.54	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25329	Nov 7 13:49	1h 27m	29.40	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25324	Nov 6 14:08	23h 17m	29.38	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25323	Nov 6 11:02	3h 6m	29.37	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25322	Nov 6 09:42	1h 19m	29.15	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25317	Nov 5 10:00	23h 26m	28.99	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25311	Nov 4 10:04	23h 41m	29.23	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25298	Nov 3 20:56	12h 27m	29.00	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25288	Nov 3 10:54	3h 51m	29.04	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25287	Nov 3 08:52	2h 37s	49.94	PHYSICS_TH	old trigger
+25286	Nov 3 08:10	38m 36s	30.40	PHYSICS_TH	junk
+25280	Nov 2 09:47	22h 7m	29.16	PHYSICS_TH	Th232 source, with low energy veto,threshold 64, NHit 32, width threshold 1.92us, hold off 2.56ms
+25279	Nov 2 09:35	7m 29s	39.80	PHYSICS_TH	Th232 source, with low energy veto,threshold 48, NHit 32, width threshold 1.6us, hold off 2.56ms
+25278	Nov 2 09:22	9m 29s	36.43	PHYSICS_TH	Th232 source, with low energy veto,threshold 32, NHit 90, width threshold 1.6us, hold off 2.56ms
+25274	Nov 2 09:11	8m 42s	36.45	PHYSICS_TH	Th232 source, with low energy veto,threshold 16, NHit 90, width threshold 1.6us, hold off 2.56ms
+25273	Nov 2 08:58	7m 28s	13.28	PHYSICS_TH	Th232 source, with low energy veto,threshold 16, NHit 90, width threshold 5.12us
+25267	Nov 1 18:35	14h 7m	13.25	PHYSICS_TH	Th232 source, with low energy veto,threshold 16, NHit 90, width threshold 5.12us
+25219	Nov 1 14:20	3h 45m	14.31	PHYSICS_TH	Th232 source, with low energy veto,threshold 16, NHit 90, width threshold 5.12us
+25218	Nov 1 12:58	1h 18m	8.31	PHYSICS_TH	Th232 source, with low energy veto,threshold 32, NHit 90, width threshold 5.12us
+25213	Nov 1 11:34	1h 6m	8.40	PHYSICS_TH	Th232 source, with low energy veto,threshold 32, NHit 90, width threshold 5.12us
+25212	Nov 1 10:55	27m 28s	34.36	PHYSICS_TH	Th232 source, with low energy veto, NHit 90, width threshold 5.12us
+25211	Nov 1 10:24	28m 35s	37.61	PHYSICS_TH	Th232 source, with low energy veto, NHit 80, width threshold 5.12us
+25210	Nov 1 09:40	41m 8s	38.38	PHYSICS_TH	Th232 source, with low energy veto, NHit 50, width threshold 5.12us
+25209	Nov 1 09:11	25m 33s	39.62	PHYSICS_TH	Th232 source, with low energy veto, NHit 32, width threshold 5.12us
+25155	Nov 1 04:34	4h 7m	43.48	PHYSICS_TH	Th232 source, with low energy veto, NHit 32, width threshold 5.12us
+25154	Oct 31 22:16	6h 18m	43.48	PHYSICS_TH	Th232 source, with low energy veto, NHit 32, width threshold 5.12us
+25153	Oct 31 20:01	2h 12m	50.36	HW_DEBUG	Th232 source, old darkmatter trigger. testing for daq
+25152	Oct 31 19:56	4m 5s	55.34	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25151	Oct 31 18:15	1h 39m	50.23	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25150	Oct 31 16:34	1h 40m	50.01	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25149	Oct 31 15:06	1h 28m	49.80	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25148	Oct 31 13:30	1h 35m	49.85	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25143	Oct 31 12:31	39m 5s	49.96	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25141	Oct 31 09:57	2h 32m	49.36	PHYSICS_TH	two Th232 sources @P3-Up and P8-Up; low energy veto
+25113	Oct 30 08:22	34m 4s	4.91	PHYSICS_N	AmBe P4-Up; old trigger, with 2.56ms hold off
+25057	Oct 29 23:11	8h 40m	4.91	PHYSICS_N	AmBe P4-Up; old trigger, with 2.56ms hold off
+25056	Oct 29 10:24	12h 22m	4.91	PHYSICS_N	AmBe P4-Up; old trigger, with 2.56ms hold off
+25051	Oct 29 09:02	1h 6m	4.84	PHYSICS_N	AmBe P4-Up; old trigger, with 2.56ms hold off
+25050	Oct 28 09:28	23h 32m	5.00	PHYSICS_N	AmBe P6-Up; old trigger, with 2.56ms hold off
+25045	Oct 27 21:52	11h 21m	4.91	PHYSICS_N	F11 -HV -309->-308V; AmBe P8-Up; old trigger, with 2.56ms hold off
+25044	Oct 27 10:14	11h 36m	4.98	PHYSICS_N	AmBe P8-Up; old trigger, with 2.56ms hold off
+25039	Oct 26 09:03	24h 55m	2.87	PHYSICS_DM	old trigger, with 2.56ms hold off
+25034	Oct 25 08:55	23h 52m	4.85	PHYSICS_N	AmBe P9-Up; old trigger, with 2.56ms hold off
+25029	Oct 24 09:12	23h 28m	4.83	PHYSICS_N	AmBe P3-Up; old trigger, with 2.56ms hold off
+25023	Oct 23 10:08	22h 34m	5.08	PHYSICS_N	AmBe P5-Up; old trigger, with 2.56ms hold off
+25017	Oct 22 11:05	22h 44m	2.74	PHYSICS_DM	old trigger, with 2.56ms hold off
+25016	Oct 22 09:54	1h 10m	2.82	PHYSICS_DM	old trigger, with 2.56ms hold off
+25011	Oct 22 09:01	35m 23s	5.04	PHYSICS_N	AmBe P7-Up; old trigger, with 2.56ms hold off
+25010	Oct 22 08:19	40m 46s	5.05	PHYSICS_N	F11 -HV -310->-309V; AmBe P7-Up; old trigger, with 2.56ms hold off
+25009	Oct 21 23:06	9h 12m	5.12	PHYSICS_N	AmBe P7-Up; old trigger, with 2.56ms hold off
+25004	Oct 21 18:09	4h 41m	5.16	PHYSICS_N	AmBe P7-Up; old trigger, with 2.56ms hold off
+25002	Oct 21 17:44	13m 37s	4.94	PHYSICS_N	old trigger debugging
+24998	Oct 21 15:34	34m 46s	2.39	PHYSICS_N	old trigger debugging
+24997	Oct 21 15:17	11m 16s	3.21	PHYSICS_N	old trigger debugging
+24996	Oct 21 14:48	22m 4s	3.21	PHYSICS_N	old trigger with no hold off
+24995	Oct 21 11:07	3h 23m	3.30	PHYSICS_N	old trigger with 2.56ms hold off
+24994	Oct 21 09:02	1h 21m	5.68	PHYSICS_N	AmBe P7-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24993	Oct 20 13:36	19h 25m	6.23	PHYSICS_N	AmBe P7-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24991	Oct 20 09:11	4h 24m	5.73	PHYSICS_N	AmBe P7-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24985	Oct 19 23:12	9h 39m	5.71	PHYSICS_N	F11 -HV -311->-310V; AmBe P7-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time  0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24976	Oct 18 17:52	15h 5s	3.56	PHYSICS_DM	new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24971	Oct 18 12:44	4h 53m	3.63	PHYSICS_DM	new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait.08   PHYSICS_N	 AmBe P3-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24953	Oct 16 09:07	9h 37m	5.78	PHYSICS_N	AmBe P3-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24944	Oct 15 09:57	22h 41m	6.05	PHYSICS_d off 0ms
+24932	Oct 13 19:06	13h 45m	6.63	PHYSICS_N AmBe P8-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0ms
+24931	Oct 13 09:47	9h 18m	6.84	PHYSICS_N AmBe P8-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0mth value 0x0, trigger hold off 0ms
+24917	Oct 11 18:03	12h 21m	6.92	PHYSICS_N AmBe P4-Up; new trigger, hit 50, width value 0xa,peak number value 0x0, pulse wait time 0x12C, total width value 0x0, trigger hold off 0msvalue 0x10,peak number value 0x2, pulse wai0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24889	Oct 8 10:04	7h 8m	8.70	PHYSICS_RN     new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+2488wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24874	 Oct 7 13:19	 5h 3m 24.50 PHYSICS_RN	 new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24873	 Oct 7 10:38	 2h 41m	     29.35	 PHYSICS_RN  tune loop1 flow to 52SLPM; new trigger with veto, hit 50width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24868	 Oct 7 01:36	 1h 37m	     33.10	 PHYSICS_RN  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24860	 Oct 5 18:41	 35m 56s     32.74	 PHYSICS_RN  new trigger with veto, hit 50, width vaue 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24852	 Oct 5 02:03	 2h er wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24844	 Oct 4 03:57	 1h 18m	    32.92 PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24843	 Oct 3 23:55	 4h 56s	    33.39 PHYSICS_RN	  new trigger with veto, hit 50, window 0xc350
+24840	 Oct 3 19:49	 22m 31s    32.14 PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24839	 Oct 3 16:50	 2h 58m	    32.46 PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, puls1s	    31.32	PHYSICS_RN  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24720	 Oct 3 11:54	 15m 25s    35.59 PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, N    new trigger with veto, hit 50, width value 0x10,peak n value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit vaulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24656	 Sep 29 17:31	 9h 58m	    33.01 PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24655	 Sep 29 17:18	 12m 29s    31.97 PHYSICS_RN	  new trigger with veto, hit 50, alue 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24652	 Sep 29 11:40	 10m 28s    1.31  PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24649	 Sep 29 11:25	 10m 25s    1.43  PHYSIC7:21	  11m 11s     31.03	 PHYSICS_RN    
+24593	 Sep 28 17:48	 13h 32m    30.08 PHYSICS_RN	  new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24592	 Sep 28 17:34	 13m 28.67  PHYSICS_RN		  new trigger with veto, hit 50, width value m 41s     5.56   HW_DEBUG	 
+24569	 Sep 27 16:16	 14m 51s    5.38		  HW_DEBUG    
+24568	 Sep 27 15:14	 16m 58s    5.53		  HW_DEBUG    old trigger
+24567	 Sep 27 15:05	 8m 1s	    6.15		  HW_DEBUG    
+24566	 Sep 27 14:58	 6m 55s	    6.13		  HW_DEBUG    
+24565	 Sep 27 06:11	 8h 46m	    6.63		  HW_DEBUG    s2 threshold ~60pe,AmBe P6-UP, new trigger with veto, hit 50, width value 0x10,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 0ms, no trigger veto
+24564	 Sep 26 20:22	 9x46, trigger hold off 2ms, no trigger veto
+24559	 Sep 26 16:30	 8m 58s	       10.23	HW_DEBUG	AmBe P6-UP, new trigger with veto, hit 50, width value 0x14,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, trigger hold off 2ms, no trigger veto
+24557	 Sep 26 16:19	 3m 38s	       3.65	HW_DEBUG	AmBe P6-UP, new trigger with veto, hit 50, width value 0x14,peak number value 0x2, pulse wait time 0x12C, tep 26 11:38	    1h 21s	  10.19	   HW_DEBUG	   s2 threshold ~40pe,AmBe P6-UP, new trigger with veto, hit 50, width value 0xa,peak number value 0x2, pulse wait time 0x12C, total width value 0x46, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24553	 Sep 26 11:01	 33m 9s	       6.06	HW_DEBUG	s2 threshold >200pe,AmBe P6-UP, new trigger with veto, hit 50, width value 0xa,peak number value 0x3, pulse wait time 0x12C, total widtx12C, total width value 0x46, raw trigger wait 0xc8, anti NHit value 0x46, veto windeak number value 0x3, pulse wait time 0x12C, total width value 0x46, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24523	 Sep 23 09:29	 49m 11s       23.38	PHYSICS_RN	Rn220, 42+18.5(4)SLPM, new trigger with veto, hit 50, width value 0xa, pulse wait time 0x12C, total widtdow 0xc350
+24508	 Sep 22 07:31	 1h 8m	       22.44	HW_DEBUG	Rn220, 42+18.5(4)SLPM, new trigger with veto, hit 50, width value 0xa, pulse wait time 0x12C, total width value 0x46, raw trigger wait 0xc8, anti NHit value 0x46, veto window 0xc350
+24507	 Sep 21 17:55	 13h 35m       17.92	HW_DEBUG	Rn220, 42+18.5(4)SLPM, new trigger with veto, hit 50, width value 0xa, pulse wait time 0x12C, total wid12C, N hit value 0x0, N peak value 0x0, trigger hold off 0x0, integral value 0x0, total width value 0x46
+24485	 Sep 20 23:40	 10h 39m       9.87	HW_DEBUG	AmBe, new trigger, hit 50, loop1 52SLPM, width value 0xa, pulse wait time 0x12C, N hit value 0x0, N peak value 0x0, trigger hold off 0x0, integral value 0x0, total width value 0x46
+24484	 Sep 20 13:29	 10h 1	       new trigger, hit 50, loop1 52SLPM, width value 0xa, pulse wait time 0x12C, N hit value 0x0, N peak value 0x0, trigger hold off 0x0, integral value 0x0, total width value 0x46
+24480	 Sep 20 11:36	 18m 27s       28.72	    HW_DEBUG	  new trigger, hit 50, loop1 52SLPM, width value 0x4, pulse wait time 0x12C, N hit value 0x0,l value 0x0, total width value 0x46
+24476	 Sep 20 09:46	 15m 33s       30m 37s	    14.12	  HW_DEBUG     DM, both trigger, hit 50, width value 0x4, pulse wait time 0x12C, N hit value 0x0, N peak value 0x0, trigger hold off 0x0, integral value 0x0, total width value 0x0
+24454	 Sep 18 16:58	 15h 27m       17.51	    HW_DEBUG	  AmBe @P9 Up, both trigger, hit 50, loop1 52SLPM, width value 0x4, pulse wait time 0x12C, N hit value 0x0, N peak value 0x0, trigger hold off 0x0, integral value 0x0, toer hold off 0x0, integral value 0x0, total width value 0x0
+24450	 Sep 18 12:24	 51m 28s       10.02	    HW_DEBUG	  AmBe @P9 Up, both trigger, loop1 52SLPM, width value 0x4, pulse wait time 0x12C, N hit value 0x0, N peak value 0x0, trigger hold off 0x0
+24449	 Sep 18 09:07	 2h 30m	       9.64	    HW_DEBUG	  AmBe @P9 Up, both trigger, loop1 52SLPM, width value 0x4, pulse wait time 0x12C, N hit value 0x0, N peak value 0.20 PHYSICS_N	   AmBe @P7 Up, old trigger, loop1 52SLPM
+24424	 Sep 14 15:29	 16h 59m       3.25	    PHYSICS_N	  AmBe @P6 Up, old trigger, loop1 52SLPM
+24419	 Sep 14 11:28	 36m 10s       74.67	    PHYSICS_CO	  Co @P2 Up, new trigger, loop1 52SLPM
+24418	 Sep 14 10:02	 1h 25m	       75.77	    PHYSICS_CO	  Co @P2 Up, new trigger, loop1 52SLPM
+24400	 Sep 14 08:47	 52m 35s       6.98	    PHYSICS_KR_ZEO   stop zeolite Kr83 injection, loop1 52SLPM
+24395	 Sep 13 16:37	 15h , loop1 52SLPM
+24366	 Sep 8 19:40	 12h 47m     3.17	PHYSICS_N	F11 -HV -319->-318V.72	PHYSICS_TH	new trigger, peak value 32, width value 512， 96.7% eff
+24305	 Sep 2 17:04	 1h 30m	     1.84	PHYSICS_TH	new trigger, peak value 32, width value 512
+24235	 Sep 2 10:02	 5h 29m	     24.13	PHYSICS_TH	gain (7,20), source rotated, 78.8% eff
+24234	 Sep 2 HW_DEBUG	 test DM trigger without source
+24212	 Sep 1 09:55	 3m 23s	 13.41	 PHYSICS_TH	junk
+24210	 Sep 1 09:45	 6m 29s	 2.44	 HW_DEBUG	test DM trigger with one distant source & two ThNO3 source
+24208	 Sep 1 09:37	 3m 34s	 1.89	 HW_DEBUG	test DM trigger with one distant source (changed position)
+24207	 Sep 1 09:30	 4m 17s	 0.70	 PHYSICS_TH	test LVeto trigger with one distant source (ThO2)
+24206	 Sep 1 09:23	 6m 53s	 3.46	 in to(15,20)
+24190	 Aug 31 16:31	 2h 48m	 36.49	 PHYSICS_TH	2*ThNO3+3*ThO2, ThNO3 sources rotated by 90°
+24189	 Aug 31 16:20	 11m 13s 36.32	 PHYSICS_TH	2*ThNO3+3*ThO2, ThNO3 sources rotated by 90°
+24188	 Aug 31 09:07	 7h 12m	 36.39	 PHYSICS_TH	2*ThNO3+3*ThO2, ThNO3 sources rotated by 90°
+24183	 Aug 30 22:39	 10h	 36.33	 PHYSICS_TH	2*ThNO3+3*ThO2, new trigger, peak value 32, width value 512, 76.2% eff
+24182	 Aug 30 22:26	 116:25	 32m 5s	 45.97		PHYSICS_TH	2*ThNO3+3*ThO2, new trigger, peak value 32, width value 32
+24171	 Aug 30 16:17	 4m 27s	 20.12	 HW_DEBUG	another ThNO3+3*ThO2, new trigger, peak value 32, width value 32
+24170	 Aug 30 16:10	 5m 27s4130	 Aug 29 22:36	12m 13s	9.56	      HW_DEBUG	   ramp up top pmt gain
+24129	 Aug 29 10:33	 11h 40m	 10.43	PHYSICS_DM  Low gain(7,20), ThO2 source run, old triggerSLPM+6SLPM
+24066	 Aug 26 08:49	 23h 40m	 2.33	PHYSICS_DM  injection, old trigger during the Kr calibration, 50SLPM+6SLPM
+24061	 Aug 25 09:52	 22h 42m	 2.37	PHYSICS_DM  injection, old trigger during the Kr calibration, 50SLPM+6SLPM
+24056	 Aug 24 08:37	 24h 3m		 2.32	PHYSICS_KR_AL	       injection, old trigger during the Kr caliR_AL	injection, old trigger during the Kr calibration, 42SLPM+21SLPM
+24030	 Aug 20 09:03	 1h 54m		 2.04	PHYSICS_DM	       old trigger
+23998	 Aug 19 11:22	 21h 7m		 2.07	PHYSICS_KR_AL	       stop injection, old trigger
+23997	 Aug 19 09:09	 2h 12m		 2.69	PHYSICS_KR_AL	       Kr83 injection， old trigger
+23992	 Aug 18 09:04	 23h 30m	 2.210	HW_DEBUG	       
+23935	 Aug 15 10:18	 21m 1.81	 HW_DEBUG		       
+23934	 Aug 15 09:46	 3m 40s		 2.13			       HW_DEBUG	
+23933	 Aug 15 09:40	 4m 59s		 2.24			       HW_DEBUG	
+23932	 Aug 15 09:37	 3m 14s		 2.21			       HW_DEBUG	
+23930	 Aug 15 09:31	 4m 51s		 1.96			       HW_DEBUG	
+23927	 Aug 15 09:20	 9m 2.13	 HW_DEBUG		       
+23888	 Aug 14 17:13	 15h 14m	 2.22			       PHYSICS_DM	
+23887	 Aug 14 13:03	 29m 2.33	 HW_DEBUG		       
+23885	 Aug 14 10:51	 13m 39s	 2.14			       HW_DEBUG	
+23883	 Aug 14 10:02	 5m 2828s	 2.19			       PHYSICS_DM	
+23794	 Aug 11 11:14	 2h 3m		 2.17			       PHYSICS_DM	
+23792	 Aug 11 10:30	 43m 29s	 2.06			       PHYSICS_DM	
+23791	 Aug 11 09:03	 1h 26m		 2.15			       PHYSICS_DM	
+23786	 Aug 10 16:04	 16h 26m	 2.19			       PHYSICS_DM	
+23785	 Aug 10 09:51	 6h 12m		 2.31			       PHYSICS_DM	
+23778	 Aug 10 08:10	 37m 47s	 2.66			       PHYSICS_DM	
+23777	 Aug 9 17:05	 15h 4m		 3.18			       PHYSICS_DM	
+23776	 Aug 9 15:24	 1h 41m		 2.26			       PHYSICS_DM	
+23775	 Aug 9 14:42	 41m 42s	 2.20			       PHYSICS_DM	
+23774	 Aug 9 13:08	 1h 33m		 2.17			       PHYSICS_DM	
+23773	 Aug 9 12:54	 13m 54s	 2.13			       PHYSICS_DM	
+23772	 Aug 9 10:11	 2h 42m		 2.17			       PHYSICS_DM	
+23770	 Aug 9 09:41	 29m 21s	 2.13			       PHYSICS_DM	
+23763	 Aug 8 22:34	 10h 8m		 2.21			       PHYSICS_DM	F11 -HV -325V->-324V
+23762	 Aug 8 11:26	 11h 7m		 2.39			       PHYSICS_DM	
+23761	 Aug 8 10:26	 1h 7s		 2.17			       PHYSICS_DM	
+23759	 Aug 8 08:45	 1h 35m		 2.19			       PHYSICS_DM	
+23753	 Aug 7 22:38	 9h 47m		 2.21			       PHYSICS_DM	Ramp Down 11405 +HV from 650V->600V
+23751	 Aug 7 09:32	 13h 3_DM	 
+23537	 Jul 24 08:30	 33m 2.25	 PHYSICS_DM	
+23533	 Jul 23 08:33	 23h 22m	 2.19		PHYSICS_DM	
+23522	 Jul 22 08:16	 23h 25m	 2.19		PHYSICS_DM	
+23518	 Jul 21 16:39	 15h 17m	 2.34		PHYSICS_DM	
+23517	 Jul 21 07:50	 8h 48m		 2.28		PHYSICS_DM	
+23512	 Jul 20 23:09	 8h 07:57	 23h 57m	2.32		PHYSICS_DM	
+23437	 Jul 7 18:01	 13h 34m	 2.34		PHYSICS_DM	F11 -HV -332 -> -331V
+23436	 Jul 7 08:06	 9h 51m		 2.41		PHYSICS_DM	
+23432	 Jul 6 08:15	 23h 34m	 2.39		PHYSICS_DM	
+23427	 Jul 5 08:25	 23h 30m	 2.36		PHYSICS_DM	
+23421	 Jul 4 07:58	 24h 8m		 2.25		PHYSICS_DM	
+23417	 Jul 3 08:47	 22h 51m	 2.30		PHYSICS_DM	
+23416	 Jul 3 08:35	 12m 28s	 2.31		PHYSICS_DM	
+23414233536  PHYSICS_DM	 
+23262	     Jun 9 09:35 10h 40m	2.44	PHYSICS_DM	
+23249	     Jun 8 11:20 21h 22m	2.26	PHYSICS_DM	
+23243	     Jun 7 10:21 24h 35m	2.24	PHYSICS_DM	
+23238	     Jun 6 19:40 14h 21m	2.22	PHYSICS_DM	F11 -339V->-338V
+23235	     Jun 6 09:47 9h 52m		2.51	PHYSICS_DM	
+23230	     Jun 5 08:33 24h 59m	2.26	PHYSICS_DM	
+23224	     Jun 428 14:19   18h 22m	3.31	PHYSICS_DM	
+23171	     May 27 13:18    24h 44m	2.39	PHYSICS_DM	
+23167	     May 26 13:06    23h 57m	2.53	PHYSICS_DM	
+23161	     May 25 08:43    28h 7m	2.33	PHYSICS_DM	
+23157	     May 24 18:51    13h 20m	2.33	PHYSICS_DM	F11 -HV -342V->-341V
+23155	     May 24 09:20    9h 30m	2.55	PHYSICS_DM	
+23150	     May 23 09:49    23h 13m	2.77	PHYSICS_DM	
+23145	     May 22 11:38    21h 50m	2.58own loop P2, Neg. HV F1-F4 -650V->-600V, F6-F10 -675V->-625V
+23082	     May 13 09:14    26h 21m	2.24	PHYSICS_DM    
+23078	     May 12 09:51    23h 6m	2.26	PHYSICS_DM    
+23074	     May 12 080:35   4h 30m	2.23	PHYSICS_DM    
+23005	     Apr 30 10:06    28m 39s	2.26	PHYSICS_DM    
+23003	     Apr 30 09:40    26m 1s	2.18	PHYSICS_DM    

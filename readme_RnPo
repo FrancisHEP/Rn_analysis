@@ -1,0 +1,34 @@
+dWenbo 2018-11-23
+The usage of Rn analysis toolkit:
+
+1. Generate ana2data from ana1data and hitdata by this script: 
+$ ./pl_condor_ana1to2.pl < /home/mawenbo/radonRun/Run13Rn_run.lst
+where pl_condor_ana1to2.pl       depends on process_ana1to2.sh,
+and   process_ana1to2.sh depends on /home/mawenbo/pandax-tools/ana1to2.cxx
+If you want to modify this procedure, 
+you modify /home/mawenbo/pandax-tools/ana1to2.cxx and then 
+$ cd /home/mawenbo/pandax-tools/build/
+$ make ana1to2
+to compile it.
+After this procedure, you can find ana2 root files 
+in directory ana2/
+
+2. Generate aa_tree.root from ana2data by this script:
+$ ./pl_condor_gen_aatree.pl < /home/mawenbo/radonRun/Run13Rn_run.lst
+where pl_condor_gen_aatree.sh depends on process_gen_aatree.sh
+and   process_gen_aatree.sh   depends on Rn220_Po216.C
+If you want to modify this procedure, you just modify Rn220_Po216.C
+You can also run it seperately, for example:
+$ root -l -q 'Rn220_Po216.C(24515)'
+it can be achieved only when ana2data for run24515 exists in directory ana2/
+After this procedure, you can find aa_tree root files 
+in directory new_aa_tree/
+
+3. Draw velocity field after you finish everything:
+$ root -l 'aa_velocity_plot.C("/home/mawenbo/radonRun/Run13Rn_run.lst")'
+
+Appendix
+Runlists of importance:
+/store/bl2/pandax/zhouxp/PandaX-II/leakBDT/Run11Rn_run.lst
+/home/mawenbo/radonRun/Run13Rn_run.lst
+/home/mawenbo/radonRun/Run13Rn_run_no_veto.lst

@@ -1,0 +1,53 @@
+000 (8580168.000.000) 11/23 17:24:08 Job submitted from host: <10.10.48.31:12542?addrs=10.10.48.31-12542>
+...
+001 (8580168.000.000) 11/23 17:24:14 Job executing on host: <10.10.48.141:50603?addrs=10.10.48.141-50603>
+...
+006 (8580168.000.000) 11/23 17:24:22 Image size of job updated: 180316
+	31  -  MemoryUsage of job (MB)
+	30808  -  ResidentSetSize of job (KB)
+...
+006 (8580168.000.000) 11/23 17:29:22 Image size of job updated: 347988
+	197  -  MemoryUsage of job (MB)
+	201228  -  ResidentSetSize of job (KB)
+...
+005 (8580168.000.000) 11/23 17:33:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:08:24, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:24, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  13376760
+	   Memory (MB)          :      197        1      6441
+...
+000 (8581638.000.000) 11/24 20:19:52 Job submitted from host: <10.10.48.31:12542?addrs=10.10.48.31-12542>
+...
+001 (8581638.000.000) 11/24 20:20:12 Job executing on host: <10.10.48.141:50603?addrs=10.10.48.141-50603>
+...
+006 (8581638.000.000) 11/24 20:20:21 Image size of job updated: 180560
+	31  -  MemoryUsage of job (MB)
+	30832  -  ResidentSetSize of job (KB)
+...
+006 (8581638.000.000) 11/24 20:22:09 Image size of job updated: 313868
+	31  -  MemoryUsage of job (MB)
+	30832  -  ResidentSetSize of job (KB)
+...
+004 (8581638.000.000) 11/24 20:22:09 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:01:24, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  13376551
+	   Memory (MB)          :       31        1      6441
+...
+009 (8581638.000.000) 11/24 20:22:09 Job was aborted by the user.
+	via condor_rm (by user mawenbo)
+...

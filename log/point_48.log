@@ -1,0 +1,101 @@
+000 (8580201.000.000) 11/23 17:24:13 Job submitted from host: <10.10.48.31:12542?addrs=10.10.48.31-12542>
+...
+001 (8580201.000.000) 11/23 17:24:33 Job executing on host: <10.10.48.139:49429?addrs=10.10.48.139-49429>
+...
+006 (8580201.000.000) 11/23 17:24:42 Image size of job updated: 28512
+	2  -  MemoryUsage of job (MB)
+	1976  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 17:29:43 Image size of job updated: 323380
+	172  -  MemoryUsage of job (MB)
+	175348  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 17:34:43 Image size of job updated: 325796
+	174  -  MemoryUsage of job (MB)
+	177688  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 17:39:43 Image size of job updated: 325796
+	174  -  MemoryUsage of job (MB)
+	177692  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 17:44:44 Image size of job updated: 356104
+	204  -  MemoryUsage of job (MB)
+	208076  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 17:49:45 Image size of job updated: 383564
+	231  -  MemoryUsage of job (MB)
+	235536  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:04:47 Image size of job updated: 383564
+	233  -  MemoryUsage of job (MB)
+	238012  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:09:47 Image size of job updated: 384000
+	233  -  MemoryUsage of job (MB)
+	238424  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:14:47 Image size of job updated: 385860
+	235  -  MemoryUsage of job (MB)
+	240284  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:29:48 Image size of job updated: 386292
+	236  -  MemoryUsage of job (MB)
+	240716  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:49:50 Image size of job updated: 406416
+	238  -  MemoryUsage of job (MB)
+	243588  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:54:51 Image size of job updated: 406416
+	239  -  MemoryUsage of job (MB)
+	244020  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 18:59:51 Image size of job updated: 406416
+	239  -  MemoryUsage of job (MB)
+	244128  -  ResidentSetSize of job (KB)
+...
+006 (8580201.000.000) 11/23 19:14:53 Image size of job updated: 406416
+	239  -  MemoryUsage of job (MB)
+	244160  -  ResidentSetSize of job (KB)
+...
+005 (8580201.000.000) 11/23 19:37:07 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 02:05:38, Sys 0 00:00:17  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 02:05:38, Sys 0 00:00:17  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  13382781
+	   Memory (MB)          :      239        1      6441
+...
+000 (8581671.000.000) 11/24 20:19:56 Job submitted from host: <10.10.48.31:12542?addrs=10.10.48.31-12542>
+...
+001 (8581671.000.000) 11/24 20:20:13 Job executing on host: <10.10.48.139:49429?addrs=10.10.48.139-49429>
+...
+006 (8581671.000.000) 11/24 20:20:22 Image size of job updated: 57172
+	3  -  MemoryUsage of job (MB)
+	2764  -  ResidentSetSize of job (KB)
+...
+006 (8581671.000.000) 11/24 20:22:08 Image size of job updated: 239680
+	3  -  MemoryUsage of job (MB)
+	2764  -  ResidentSetSize of job (KB)
+...
+004 (8581671.000.000) 11/24 20:22:08 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:26, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        1        1  13382678
+	   Memory (MB)          :        3        1      6441
+...
+009 (8581671.000.000) 11/24 20:22:08 Job was aborted by the user.
+	via condor_rm (by user mawenbo)
+...

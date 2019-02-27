@@ -1,0 +1,16 @@
+This is the readme for BiPo events.
+
+1. Generate beta-alpha coincidence tree.
+$ ./pl_condor_gen_batree.pl < Run13Rn_run.lst
+where pl_condor_gen_batree.pl depends on process_gen_batree.sh
+and   process_gen_batree.sh   depends on BiPo_coin.C
+If you want to modify this procedure, you modify BiPo_coin.C
+You can also run it for a single run, e.g.
+$ root -l -q 'BiPo_coin.C(24467)'
+
+2. Plot position of ba-coin events.
+$ root -l 'ba_position_plot.C("/home/mawenbo/radonRun/Run13Rn_run.lst")'
+
+These procedures should be repeated for these run lists:
+Run11Rn_run.lst           Run13Rn_run.lst          
+Run13Rn_run_HW_DEBUG.lst  Run13Rn_run_no_veto.lst

@@ -1,9 +1,7 @@
 // Wenbo
-// 02-27
-// version for all root files.
-// 02-26
+// 2019-02-26
 // The compile-able version of check_ba212.C
-// 02-12
+// 2019-02-12
 // This is the better version of Plot_ba212.C
 // But I just use it to check 24467&24468. 
 // 2019-01-29
@@ -25,16 +23,18 @@
 #include <vector>
 #include <algorithm>
 
-int check_ba212(int runNumber)
+int check_ba212_2446724468()
 {
   gStyle->SetPalette(57); // kBird=57
   gStyle->SetNumberContours(100);
   TChain * chain = new TChain("rn220_BA");
-  TString targetFile = Form("ba212/outTree_212_BiPo_%d.root",runNumber);
-  chain->Add(targetFile);
+  TString file24467 = "ba212/outTree_212_BiPo_24467.root";
+  TString file24468 = "ba212/outTree_212_BiPo_24468.root";
+  chain->Add(file24467);
+  chain->Add(file24468);
 
   int Time = 6569642;
-  int runNo,trigNo;
+  int runNo, trigNo;
   double triggerTime;
 
   unsigned int nS1, nS2;

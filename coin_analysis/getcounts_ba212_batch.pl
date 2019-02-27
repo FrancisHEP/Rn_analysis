@@ -18,7 +18,7 @@ while (<>) {
       print $r, " at ", $i, "\n";
       system ("condor_submit <<\"EOF\"
 universe = vanilla
-executable = run_check_ba212.sh
+executable = getcounts_ba212_script.sh
 arguments = $r
 log = log/task_$i.log
 output = log/task_$i.out

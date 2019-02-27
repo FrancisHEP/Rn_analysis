@@ -1,30 +1,37 @@
-#include <iostream>
-#include <TString.h>
-#include <TTree.h>
-#include <TFile.h>
-#include <TMath.h>
-#include <TChain.h>
-#include <TCanvas.h>
-#include <TH2.h>
-#include <TF1.h>
-#include <TLine.h>
-#include <TLatex.h>
-#include <TCut.h>
+// Wenbo
+// 2019-02-26
+// The compile-able version of check_ba212.C
+// 2019-02-12
+// This is the better version of Plot_ba212.C
+// But I just use it to check 24467&24468. 
+// 2019-01-29
+// update TBA[beta]:TBA[alpha] check.
+
+#include "TLatex.h"
+#include "TCanvas.h"
+#include "TCut.h"
+#include "TF1.h"
+#include "TH2.h"
+#include "TH1.h"
+#include "TChain.h"
+#include "TString.h"
+#include "TCanvas.h"
+#include "TStyle.h"
 #include "TROOT.h"
-#include "TBrowser.h"
+#include <iostream>
 #include <fstream>
 #include <vector>
 #include <algorithm>
 
-#include <TChain.h>
-#include <TFileCollection.h>
-
-
-void Plot_ba214(int runNo)
+int check_ba212()
 {
-  TChain *chain;
-  chain = new TChain("rn222_BA");
-  chain->Add(Form("ba214/outTree_222_BA_%d.root",runNo));
+  gStyle->SetPalette(57); // kBird=57
+  gStyle->SetNumberContours(100);
+  TChain * chain = new TChain("rn220_BA");
+  TString file24467 = "ba212/outTree_212_BiPo_24467.root";
+  TString file24468 = "ba212/outTree_212_BiPo_24468.root";
+  chain->Add(file24467);
+  chain->Add(file24468);
 
   int Time = 6569642;
   int runNo, trigNo;
@@ -36,20 +43,18 @@ void Plot_ba214(int runNo)
   double xS1B[1000], yS1B[1000];
   double qS1[1000], tS1[1000], pS1[1000], hS1[1000];
   double ttenS1[1000], wS1[1000], wtenS1[1000];
-  double xS2NN[1000], yS2NN[1000];
   double xS2PAF[1000], yS2PAF[1000];
   double qS1Veto[1000];
   int S1NPeaks[1000], nS1BSatur[1000], nS1TSatur[1000];
 
   double qS2T[1000], qS2B[1000], xS2T[1000], yS2T[1000];
   double xS2B[1000], yS2B[1000];
-  double qS2[1000], tS2[1000], pS2[1000], hS2[1000] ;
+  double qS2[1000], tS2[1000], pS2[1000], hS2[1000];
   double ttenS2[1000], wS2[1000], wtenS2[1000];
-  double  chi2[1000];
+  double xS2NN[1000], yS2NN[1000], chi2[1000];
   int nS2BSatur[1000], nS2TSatur[1000];
   int beta, alpha;
-  gStyle->SetPalette(57); // kBird=57
-  gStyle->SetNumberContours(100);
+
   chain->SetBranchAddress("trigNo", &trigNo);
   chain->SetBranchAddress("runNo", &runNo);
   chain->SetBranchAddress("triggerTime", &triggerTime);
@@ -74,8 +79,6 @@ void Plot_ba214(int runNo)
   chain->SetBranchAddress("nS1BSatur", nS1BSatur);
   chain->SetBranchAddress("nS1TSatur", nS1TSatur);
 
-
-
   chain->SetBranchAddress("nS2", &nS2);
   chain->SetBranchAddress("s2max", &s2max);
   chain->SetBranchAddress("xS2T", xS2T);
@@ -99,58 +102,48 @@ void Plot_ba214(int runNo)
   chain->SetBranchAddress("beta", &beta);
   chain->SetBranchAddress("alpha", &alpha);
 
-  //TCut FV = "tS2[s2max]-tS1[beta]>25000&&tS2[s2max]-tS1[beta]<340000&&xS2PAF[s2max]*xS2PAF[s2max]+yS2PAF[s2max]*yS2PAF[s2max]<72000";
-  TCut FV = "tS2[s2max]-tS1[beta]>20000&&tS2[s2max]-tS1[beta]<350000&&xS2PAF[s2max]*xS2PAF[s2max]+yS2PAF[s2max]*yS2PAF[s2max]<72000";
+  TCut FV = "tS2[s2max]-tS1[beta]>20000&&tS2[s2max]-tS1[beta]<350000";
+  TCut R2 = "xS2PAF[s2max]*xS2PAF[s2max]+yS2PAF[s2max]*yS2PAF[s2max]<72000";
 
   // Depth:TBA cuts
-
   TCanvas *c1=new TCanvas("c1","c1",520,520);
   TH2F * h1 = new TH2F("h1","",100,-1,0,100,-400,0);
-  chain->Draw("(tS1[beta]-tS2[s2max])/1000:(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])>>h1",FV,"");
+  chain->Draw("(tS1[beta]-tS2[s2max])/1000:(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])>>h1",FV,"colz");
   h1->SetTitle("Depth:TBA^{#beta}");
   h1->GetXaxis()->SetTitle("TBA^{#beta}");
   h1->GetYaxis()->SetTitle("Depth[us]");
   h1->SetMarkerColor(2);
   h1->Draw("colz");
-  double a,b;
+
+
+  // fit and draw Depth:TBA
   TF1 *f1=new TF1("f1","[0]+[1]*x",-1,0);
   f1->SetParameters(20,400);
-  h1->Fit("f1","NR");
-  TH2F * htmp = new TH2F("htmp","",100,-1,0,100,-400,0);
-  for (int i =0;i<10;i++){
-    a = f1->GetParameter(1);
-    b = f1->GetParameter(0);
-    TCut Cut3 = Form("(-tS2[s2max]+tS1[beta])/1000<%.2f*(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])+%.2f+50&&(-tS2[s2max]+tS1[beta])/1000>%.2f*(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])+%.2f-50",a,b,a,b);
-    chain->Draw("(tS1[beta]-tS2[s2max])/1000:(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])>>htmp",FV&&Cut3,"colz");
-    htmp->Fit("f1","R");
-  }
-  a = f1->GetParameter(1);
-  b = f1->GetParameter(0);
-  TCut Cut3 = Form("(-tS2[s2max]+tS1[beta])/1000<%.2f*(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])+%.2f+50&&(-tS2[s2max]+tS1[beta])/1000>%.2f*(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])+%.2f-50",a,b,a,b);
-  h1->Draw("colz");
-  f1->Draw("same");
+  h1->Fit("f1","R");
+
+  double a = f1->GetParameter(1);
+  double b = f1->GetParameter(0);
+
   TString Range1 = Form("%.2f*x+%.2f+50",a,b);
   TString Range2 = Form("%.2f*x+%.2f-50",a,b);
+  
   TF1 *f4=new TF1("f4",Range1,-1,0);
   f4->SetLineStyle(2);
-  f4->SetLineColor(3);
+  f4->SetLineColor(4);
   f4->Draw("same");
   TF1 *f5=new TF1("f5",Range2,-1,0);
   f5->SetLineStyle(2);
-  f5->SetLineColor(3);
+  f5->SetLineColor(4);
   f5->Draw("same");
 
+  TCut Cut3 = Form("(-tS2[s2max]+tS1[beta])/1000<%.2f*(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS2B[beta])+%.4f+50&&(-tS2[s2max]+tS1[beta])/1000>%.2f*(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])+%.2f-50",a,b,a,b);
 
-
-
-  // S1&S2 Z&R2 check
-  TCanvas *c3=new TCanvas("c3","c3",640,640);
+  // S1&S2 with Z&R2 cuts
+  TCanvas * c3=new TCanvas("c3","c3",640,640);
   c3->Divide(2,2);
+  TH2F * h3 = new TH2F("h3","",100,0,350,100,0,100000);
   c3->cd(1);
-  TH2F * h3 = new TH2F("h3","",100,0,350,100,0,90000);
-  TH2F * h4 = new TH2F("h4","",100,0,100000,100,0,90000);
-  TH2F * h5 = new TH2F("h5","",100,0,350,100,0,10);
-  TH2F * h6 = new TH2F("h6","",100,0,100000,100,0,10);
+  // qS1:dT
   chain->Draw("qS1[alpha]:(tS2[s2max]-tS1[beta])/1000>>h3",FV&&Cut3,"");
   h3->SetStats(0);
   h3->SetTitle("S1:Z");
@@ -158,42 +151,26 @@ void Plot_ba214(int runNo)
   h3->SetMarkerStyle(22);
   h3->SetMarkerSize(1);
   h3->Draw("colz");
-  TF1 *f3=new TF1("f3","[0]+[1]*x+[2]*x*x",25,340);
-  f3->SetParameters(42000,40);
-  f3->SetLineColor(2);
-  f3->SetLineStyle(1);
-  h3->Fit(f3,"RN");
-  double aa,bb,cc;
-  TH2F * htmp2 = new TH2F("htmp2","",100,0,350,100,0,90000);
-  for (int i=0;i<10;i++){
-    aa = f3->GetParameter(1);
-    bb = f3->GetParameter(0);
-    cc = f3->GetParameter(2);
-    TCut s1z = Form("qS1[alpha]>%.2f*(tS2[s2max]-tS1[beta])/1000*(tS2[s2max]-tS1[beta])/1000+%2.f*(tS2[s2max]-tS1[beta])/1000+%.2f-10000",cc,aa,bb);
-    chain->Draw("qS1[alpha]:(tS2[s2max]-tS1[beta])/1000>>htmp2",FV&&Cut3&&s1z,"colz");
-    htmp2->Fit("f3","NR");
-  }
-  h3->Draw("colz");
+  TF1 *f3=new TF1("f3","[0]+[1]*x",0,350);
+  f3->SetParameters(40000,50);
+  f3->SetLineColor(4);
+  f3->SetLineStyle(2);
   f3->Draw("same");
-  TF1 * ff3 = new TF1("ff3","[0]+[1]*x+[2]*x*x",0,350);
-  ff3->SetParameters(bb-10000,aa,cc);
-  ff3->SetLineColor(3);
-  ff3->SetLineStyle(2);
-  ff3->Draw("same");
-  aa = f3->GetParameter(1);
-  bb = f3->GetParameter(0);
-  cc = f3->GetParameter(2);
-  TCut s1z = Form("qS1[alpha]>%.2f*(tS2[s2max]-tS1[beta])/1000*(tS2[s2max]-tS1[beta])/1000+%2.f*(tS2[s2max]-tS1[beta])/1000+%.2f-500",cc,aa,bb);
+
+  TCut s1z = Form("qS1[alpha]>%.2f*(tS2[s2max]-tS1[beta])/1000+%.2f",f3->GetParameter(1),f3->GetParameter(0));
+  TH2F * h4 = new TH2F("h4","",100,0,100000,100,0,100000);
   c3->cd(2);
-  chain->Draw("qS1[alpha]:xS2PAF[s2max]^2+yS2PAF[s2max]^2>>h4",FV&&Cut3&&s1z,"");
+  // qS1:r^2
+  chain->Draw("qS1[alpha]:xS2PAF[s2max]^2+yS2PAF[s2max]^2>>h4",FV&&""&&Cut3&&""&&s1z,"");
   h4->SetStats(0);
   h4->SetTitle("S1:R^{2}");
   h4->SetMarkerColor(2);
   h4->SetMarkerStyle(22);
   h4->SetMarkerSize(1);
   h4->Draw("colz");
-
+  TH2F * h5 = new TH2F("h5","",100,0,350,100,0,7);
   c3->cd(3);
+  // log10qS2:dT
   chain->Draw("log10(qS2[s2max]):(tS2[s2max]-tS1[beta])/1000>>h5",FV&&Cut3&&s1z,"");
   h5->SetStats(0);
   h5->SetTitle("S2:Z");
@@ -206,11 +183,10 @@ void Plot_ba214(int runNo)
   f6->SetLineColor(4);
   f6->SetLineStyle(2);
   f6->Draw("same");
-  double aaa=f6->GetParameter(1);
-  double bbb=f6->GetParameter(0);
-  TCut s2z = Form("log10(qS2[s2max])>%.2f*(tS2[s2max]-tS1[beta])/1000+%.2f",aaa,bbb);
-  cout<<s2z<<endl;
+  TCut s2z = Form("log10(qS2[s2max])>%.2f*(tS2[s2max]-tS1[beta])/1000+%.2f",f6->GetParameter(1),f6->GetParameter(0));
+  TH2F * h6 = new TH2F("h6","",100,0,100000,100,0,7);
   c3->cd(4);
+  // log10qS2:r^2
   chain->Draw("log10(qS2[s2max]):xS2PAF[s2max]^2+yS2PAF[s2max]^2>>h6",FV&&Cut3&&s1z&&s2z,"");
   h6->SetStats(0);
   h6->SetTitle("S2:R^{2}");
@@ -219,34 +195,43 @@ void Plot_ba214(int runNo)
   h6->SetMarkerSize(1);
   h6->Draw("colz");
 
+  // updated TBA[alpha]:TBA[beta] 2019-01-29
+  TCanvas * c_TBA = new TCanvas("c_TBA","c_TBA",520,520);
+  TH2F * h_TBA = new TH2F("h_TBA","",100,-1,0.2,100,-1,0.2);
+  chain->Draw("(qS1T[alpha]-qS1B[alpha])/(qS1T[alpha]+qS1B[alpha]):(qS1T[beta]-qS1B[beta])/(qS1T[beta]+qS1B[beta])>>h_TBA",FV,"colz");
+  h_TBA->SetTitle("TBA^{#alpha}:TBA^{#beta}");
+  h_TBA->GetXaxis()->SetTitle("TBA^{#beta}");
+  h_TBA->GetYaxis()->SetTitle("TBA^{#alpha}");
+  h_TBA->SetMarkerColor(2);
+  chain->Draw("colz");
 
   // Decay time check the result
   TCanvas *c2=new TCanvas("c2","c2",520,520);
-  TH1F * h2 = new TH1F("h2","",50,0,500);
-
-  chain->Draw("(tS1[alpha]-tS1[beta])/1000>>h2","(tS1[alpha]-tS1[beta])/1000>10"&&FV&&Cut3&&s2z,"");
+  TH1F * h2 = new TH1F("h2","",100,0,5);
+  chain->Draw("(tS1[alpha]-tS1[beta])/1000>>h2",FV&&R2&&Cut3&&s1z&&s2z,"");//&&"(tS2[s2max]-tS1[beta])/1000<250","");
   h2->SetTitle("Decay time");
   h2->GetXaxis()->SetTitle("Dt[us]");
   h2->GetYaxis()->SetTitle("Count");
-
   int counts = h2->GetEntries();
-  cout << "Count= " << counts << endl;
-	
-
-  TF1 *f2=new TF1("f2","[0]*exp(-x/[1])",10,500);
-  f2->SetParameters(counts/20,237);
+  cout << "Counts=" << counts << endl;
+  TF1 *f2=new TF1("f2","[0]*exp(-x/[1])",0.9,5); // changed from 0.3 to 0.6
+  f2->SetParameters(counts/20,0.3*1.442695);
   h2->Fit("f2","R");
-
-  TLatex *t1=new TLatex(200,h2->GetMaximum()*0.5,Form("Dt=%.2f#pm%.2f#mus",f2->GetParameter(1),f2->GetParError(1)));
+  TLatex *t1=new TLatex(1,5,Form("Dt=%.2f#pm%.2f#mus",f2->GetParameter(1),f2->GetParError(1)));
   t1->SetTextColor(2);
   t1->SetTextSize(0.04);
   t1->Draw("same");
-  TLatex *t2=new TLatex(200,h2->GetMaximum()*0.7,Form("%.2fmBq in FV",counts/0.8614/Time*1000));
+  TLatex *t2=new TLatex(1,6,Form("%.4f #muBq",double(counts)/0.4885/Time*1.e6));
   t2->SetTextColor(2);
   t2->SetTextSize(0.04);
   t2->Draw("same");
 
-  c1->SaveAs("Rn222cuts.pdf");
-  c2->SaveAs("Rn222DecayTime.pdf");
-  c3->SaveAs("Rn222S1S2.pdf");
+  c1->SaveAs("Bi212c1.pdf");
+  c1->SaveAs("Bi212c1.root");
+  c2->SaveAs("Bi212c2.pdf");
+  c2->SaveAs("Bi212c2.root");
+  c3->SaveAs("Bi212c3.pdf");
+  c3->SaveAs("Bi212c3.root");
+
+  return counts;
 }

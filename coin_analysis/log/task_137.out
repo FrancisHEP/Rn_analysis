@@ -1,21 +1,19 @@
 
-Processing Th_Chain_AA.C(24984)...
-totalEvents: 186930
-5.34906%
-10.6987%
-16.0483%
-21.3978%
-26.7474%
-32.097%
-37.4466%
-42.7962%
-48.1458%
-53.4954%
-58.845%
-64.1946%
-69.5442%
-74.8938%
-80.2434%
-85.593%
-90.9426%
-96.2922%
+Processing getcounts_ba212.C(24435)...
+
+****************************************
+Minimizer is Minuit / Migrad
+Chi2                      =      1133.35
+NDf                       =            1
+Edm                       =  2.82184e-20
+NCalls                    =           33
+p0                        =     -17.7907   +/-   258.344     
+p1                        =      432.558   +/-   475.307     
+Counts=1
+ FCN=5.44687e-20 FROM HESSE     STATUS=NOT POSDEF     10 CALLS         111 TOTAL
+                     EDM=1.08721e-19    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.41632e+02   3.82242e+03   4.71524e-03  -1.93174e-12
+   2  p1           4.32808e-01   1.24771e+00   2.17820e-07  -5.90421e-09
+(int)1

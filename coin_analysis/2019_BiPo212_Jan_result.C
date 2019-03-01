@@ -1,0 +1,82 @@
+{
+//=========Macro generated from canvas: c1/c1
+//=========  (Fri Mar  1 14:34:50 2019) by ROOT version5.34/32
+   TCanvas *c1 = new TCanvas("c1", "c1",0,23,1200,600);
+   gStyle->SetOptFit(1);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   c1->Range(0,0,1,1);
+   c1->SetFillColor(0);
+   c1->SetBorderMode(0);
+   c1->SetBorderSize(2);
+   c1->SetTickx(1);
+   c1->SetLeftMargin(0.12);
+   c1->SetTopMargin(0.05);
+   c1->SetBottomMargin(0.15);
+   c1->SetFrameFillStyle(0);
+   c1->SetFrameBorderMode(0);
+   
+   TGraphErrors *gre = new TGraphErrors(11);
+   gre->SetName("Graph0");
+   gre->SetTitle("");
+   gre->SetFillColor(1);
+   gre->SetMarkerStyle(20);
+   gre->SetPoint(0,1.515945e+09,3.024803e-05);
+   gre->SetPointError(0,16530,3.024803e-05);
+   gre->SetPoint(1,1.515905e+09,0.0001623377);
+   gre->SetPointError(1,9240,9.372569e-05);
+   gre->SetPoint(2,1.515853e+09,1.172883e-05);
+   gre->SetPointError(2,42630,1.172883e-05);
+   gre->SetPoint(3,1.515804e+09,0);
+   gre->SetPointError(3,1980,0);
+   gre->SetPoint(4,1.515773e+09,3.208213e-05);
+   gre->SetPointError(4,31170,2.268549e-05);
+   gre->SetPoint(5,1.515728e+09,0);
+   gre->SetPointError(5,12390,0);
+   gre->SetPoint(6,1.515685e+09,1.660027e-05);
+   gre->SetPointError(6,30120,1.660027e-05);
+   gre->SetPoint(7,1.515642e+09,0);
+   gre->SetPointError(7,9330,0);
+   gre->SetPoint(8,1.51559e+09,4.645761e-05);
+   gre->SetPointError(8,43050,2.32288e-05);
+   gre->SetPoint(9,1.515516e+09,3.33667e-05);
+   gre->SetPointError(9,29970,2.359382e-05);
+   gre->SetPoint(10,1.515431e+09,1.896094e-05);
+   gre->SetPointError(10,52740,1.340741e-05);
+   
+   TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","",100,1.51532e+09,1.516019e+09);
+   Graph_Graph1->SetMinimum(0);
+   Graph_Graph1->SetMaximum(0.0002816697);
+   Graph_Graph1->SetDirectory(0);
+   Graph_Graph1->SetStats(0);
+   Graph_Graph1->SetLineStyle(0);
+   Graph_Graph1->SetMarkerStyle(20);
+   Graph_Graph1->GetXaxis()->SetTimeDisplay(1);
+   Graph_Graph1->GetXaxis()->SetTimeFormat("#splitline{%b.%d}{%Y}%F1970-01-01 00:00:00s0");
+   Graph_Graph1->GetXaxis()->SetLabelFont(132);
+   Graph_Graph1->GetXaxis()->SetLabelOffset(0.05);
+   Graph_Graph1->GetXaxis()->SetLabelSize(0.05);
+   Graph_Graph1->GetXaxis()->SetTitleSize(0.053);
+   Graph_Graph1->GetXaxis()->SetTickLength(0.02);
+   Graph_Graph1->GetXaxis()->SetTitleOffset(0.9);
+   Graph_Graph1->GetXaxis()->SetTitleFont(132);
+   Graph_Graph1->GetYaxis()->SetTitle("Activity [Bq]");
+   Graph_Graph1->GetYaxis()->CenterTitle(true);
+   Graph_Graph1->GetYaxis()->SetLabelFont(42);
+   Graph_Graph1->GetYaxis()->SetLabelOffset(0.007);
+   Graph_Graph1->GetYaxis()->SetLabelSize(0.05);
+   Graph_Graph1->GetYaxis()->SetTitleSize(0.06);
+   Graph_Graph1->GetYaxis()->SetTickLength(0.01);
+   Graph_Graph1->GetYaxis()->SetTitleFont(132);
+   Graph_Graph1->GetZaxis()->SetLabelFont(42);
+   Graph_Graph1->GetZaxis()->SetLabelOffset(0.007);
+   Graph_Graph1->GetZaxis()->SetLabelSize(0.05);
+   Graph_Graph1->GetZaxis()->SetTitleSize(0.06);
+   Graph_Graph1->GetZaxis()->SetTitleFont(132);
+   gre->SetHistogram(Graph_Graph1);
+   
+   gre->Draw("ap");
+   c1->Modified();
+   c1->cd();
+   c1->SetSelected(c1);
+}

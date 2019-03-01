@@ -1,0 +1,13 @@
+
+Processing getcounts_ba212.C(24197)...
+
+****************************************
+Minimizer is Minuit / Migrad
+Chi2                      =            0
+NDf                       =            0
+Edm                       =  2.52434e-26
+NCalls                    =           37
+p0                        =           30   +/-   63.2771     
+p1                        =      378.495   +/-   136.08      
+Counts=0
+(int)0

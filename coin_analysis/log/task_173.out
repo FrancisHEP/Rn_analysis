@@ -1,0 +1,19 @@
+
+Processing getcounts_ba212.C(24183)...
+
+****************************************
+Minimizer is Minuit / Migrad
+Chi2                      =          0.5
+NDf                       =            1
+Edm                       =  8.78721e-20
+NCalls                    =           37
+p0                        =      199.667   +/-   6.65916     
+p1                        =      733.333   +/-   10.4973     
+Counts=1
+ FCN=7.69549e-20 FROM HESSE     STATUS=NOT POSDEF     12 CALLS          87 TOTAL
+                     EDM=1.54059e-19    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.51366e+00   1.50493e+02   9.29067e-04   5.83177e-11
+   2  p1           4.32808e-01   3.03917e+00   1.32674e-05   2.89222e-09
+(int)1

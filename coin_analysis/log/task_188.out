@@ -1,0 +1,19 @@
+
+Processing getcounts_ba212.C(24056)...
+
+****************************************
+Minimizer is Minuit / Migrad
+Chi2                      =       280.17
+NDf                       =            8
+Edm                       =  1.51826e-20
+NCalls                    =           32
+p0                        =      55.2026   +/-   19.7299     
+p1                        =      535.324   +/-   43.6527     
+Counts=8
+ FCN=1.10811e-05 FROM MIGRAD    STATUS=CONVERGED     350 CALLS         351 TOTAL
+                     EDM=5.87264e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.00975e+00   1.65651e+00   3.48617e-04  -2.56892e-04
+   2  p1           1.38125e+02   2.13010e+04   2.35586e+00  -1.78687e-07
+(int)8

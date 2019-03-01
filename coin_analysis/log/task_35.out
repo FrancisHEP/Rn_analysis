@@ -1,3 +1,19 @@
 
-Processing Th_Chain_AA.C(21808)...
-totalEvents: 5693
+Processing getcounts_ba212.C(25009)...
+
+****************************************
+Minimizer is Minuit / Migrad
+Chi2                      =      3000.19
+NDf                       =            8
+Edm                       =  1.62302e-20
+NCalls                    =           33
+p0                        =     -90.8536   +/-   84.2821     
+p1                        =      268.507   +/-   168.711     
+Counts=4
+ FCN=4.62484e-06 FROM MIGRAD    STATUS=CONVERGED     364 CALLS         365 TOTAL
+                     EDM=2.53053e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.00296e+00   9.44972e-01   2.82974e-04  -1.49453e-03
+   2  p1           6.88490e+02   1.60665e+05   2.82159e+00  -1.98697e-08
+(int)4

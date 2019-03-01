@@ -36,7 +36,7 @@ int getcounts_ba212(int runNumber)
   gStyle->SetPalette(57); // kBird=57
   gStyle->SetNumberContours(100);
   TChain * chain = new TChain("rn220_BA");
-  TString targetFile = Form("ba212/outTree_212_BiPo_%d.root",runNumber);
+  TString targetFile = Form("ba212_trees/outTree_212_BiPo_%d.root",runNumber);
   chain->Add(targetFile);
 
   int Time = 6569642;
@@ -239,7 +239,7 @@ int getcounts_ba212(int runNumber)
   c3->SaveAs("Bi212c3.pdf");
   c3->SaveAs("Bi212c3.root");
 
-  ofstream myfile (Form("ba212_counts/ba212_%d_counts.txt",runNumber));
+  ofstream myfile(Form("ba212_counts/ba212_%d_counts.txt",runNumber));
   if (myfile.is_open())
     {
       myfile << Form("%d\n",counts);

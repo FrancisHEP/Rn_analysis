@@ -1,5 +1,13 @@
 
-Processing Th_Chain_AA.C(22159)...
-totalEvents: 29993
-33.3378%
-66.6789%
+Processing getcounts_ba212.C(24556)...
+
+****************************************
+Minimizer is Minuit / Migrad
+Chi2                      =            0
+NDf                       =            0
+Edm                       =  1.59191e-27
+NCalls                    =           39
+p0                        =           24   +/-   63.2771     
+p1                        =       388.06   +/-   188.887     
+Counts=0
+(int)0

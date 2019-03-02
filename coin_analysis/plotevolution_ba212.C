@@ -50,23 +50,23 @@ void plotevolution_ba212(TString myrunlist)
   TDatime date[1000];
   if (fin1.good()) {
     int i = 0;
-    double t1,t2,t3,t4,t5,t6,t7;
+    double t1,t2,t3,t4,t5,t6,t7,t8;
     // the format of big table is:
     // runNo | startTime............... | duration
     // runNo | month | day | hour | min | hour | min 
     while(fin1 >>
-	  t1 >> t2 >>  t3 >> t4 >>  t5 >> t6 >>  t7)
+	  t1 >> t2 >>  t3 >> t4 >>  t5 >> t6 >>  t7 >> t8)
       {
 	runNo[i]=t1; 
-	year[i]=2018;
-	month[i]=t2;
-	day[i]=t3;
-	hour[i]=t4;
+	year[i]=t2; 
+	month[i]=t3;
+	day[i]=t4;
+	hour[i]=t5;
 	min[i]=t6;
 	sec[i]=0;
 	date[i]=TDatime(year[i],month[i],day[i],hour[i],min[i],sec[i]);
 	startTime[i]=date[i].Convert(); // [sec] very long very large number! started from 1970
-	duration[i] = t6/24. + t7/60./24.; // [day]
+	duration[i] = t7/24. + t8/60./24.; // [day]
 	duration[i] *= 86400; // [sec]
 	if (duration[i]==0) printf("runNo%d duration %f\n",runNo[i],duration[i]);
 	// std::cout << runNo[i] << year[i] << day[i] <<endl; // check value assigning
@@ -172,6 +172,8 @@ void plotevolution_ba212(TString myrunlist)
     }
     for (int i=0;i<totrunno;++i) {
       printf("%d ",i+1);
+      printf("%d ",runNo[i]);
+      printf("%20f ",mycounts[i]/myduration[i]);
       printf("%f ",mytime[i]);
       printf("%f ",mycounts[i]);
       printf("%f ",myduration[i]);
@@ -238,9 +240,9 @@ void plotevolution_ba212(TString myrunlist)
 
     double * counts_arr = getCounts(g1,TDatime(2018,8,9,0,0,0).Convert(),TDatime(2018,9,18,0,0,0).Convert());
     printf("%20f %20f %f \n", counts_arr[0], counts_arr[1], counts_arr[2]);
-    counts_arr = getCounts(g1,TDatime(2018,10,18,0,0,0).Convert(),xmax);
+    counts_arr = getCounts(g1,TDatime(2018,10,21,0,0,0).Convert(),TDatime(2018,11,6,0,00,00).Convert());
     printf("%20f %20f %f \n", counts_arr[0], counts_arr[1], counts_arr[2]);
-    counts_arr = getCounts(g1,TDatime(2018,1,1,0,0,0).Convert(),TDatime(2018,3,1,0,0,0).Convert());
+    counts_arr = getCounts(g1,TDatime(2019,1,1,0,0,0).Convert(),TDatime(2019,3,1,0,0,0).Convert());
     printf("%20f %20f %f \n", counts_arr[0], counts_arr[1], counts_arr[2]);
 
   }
@@ -263,13 +265,14 @@ void TDatimeAutofit(TCanvas * c1, TGraphErrors * g0, TGraph * gra, double fitmin
   double * x = g0->GetX(); double * y = g0->GetY();
   double * ex = g0->GetEX(); double * ey = g0->GetEY();
   gra = new TGraph(n,x,y);
+  gra->SetName(" ");
+  gra->SetTitle(" ");
   gra->SetMarkerStyle(20);
   double x0 = x[n-1]; 
   for (int i=0;i<n;++i) {
     gra->SetPoint(i,(x[i]-x0)/86400,y[i]); // caution: x[i] is from future to past!!!
   }
   fitmin-=x0; fitmax-=x0; fitmin/=86400; fitmax/=86400;
-  gra->GetXaxis()->SetRangeUser(fitmin,fitmax);
   TF1 * f1 = new TF1("f1","[0]+[1]*exp(-(x-[2])/[3])",fitmin,fitmax);
   f1->SetParameters(1e-4,1e-4,fitmin,1);
   gra->Fit("f1","R");
@@ -280,6 +283,7 @@ void TDatimeAutofit(TCanvas * c1, TGraphErrors * g0, TGraph * gra, double fitmin
   g0->Draw("ap");
   c1->cd(2);
   gPad->SetLogy();
+  gra->GetXaxis()->SetRangeUser(fitmin,fitmax);
   gra->GetXaxis()->SetTitle("time[day]");
   gra->Draw("ap");
 }

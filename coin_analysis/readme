@@ -29,4 +29,6 @@ and once-only codes to directory talk_files/
 ***
 
 echo:
-root -l 'plotevolution_ba212.C+(lst_files/2018_physical_lists/2019Jan_stable_DM.txt)'
+root -l 'plotevolution_ba212.C+("lst_files/2018_physical_lists/test_lists.txt")'
+root -l 'plotevolution_ba212.C("lst_files/2018_physical_lists/2018_Kr_Rn_short.txt")'
+root -l 'plotevolution_ba212.C("lst_files/2018_physical_lists/2019Jan_stable_DM.txt")'
